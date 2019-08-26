@@ -3,7 +3,7 @@ from gerador_senha import *
 
 class TestGeradorSenha(unittest.TestCase):
   def setUp(self):
-    self.lista_senhas = [gera_senha() for i in range(100)]
+    self.lista_senhas = [gera_senha() for i in range(100000)]
     self.menor_senha = min(self.lista_senhas, key=len)
     self.maior_senha = max(self.lista_senhas, key=len)
 
